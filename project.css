@@ -1,0 +1,9 @@
+#edit.hide{
+
+    display: none;
+}
+
+#list li.sel{
+
+    background-color: aqua;
+}
