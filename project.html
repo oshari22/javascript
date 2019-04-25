@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
    <head>
-       <title>الحنك الجديد</title>       
+       <title>التسجيل </title>       
         <script src="project.js"></script>
+        <link rel="stylesheet" type="text/css" href="project.css">
     </head>
    <body>
-       <h3> حنك جديد</h3>
+       <h3> تسجيل جديد</h3>
        <div id="div-add">
         <form>
             <div>
-                <label for="name">   اسم الحنك </label>
+                <label for="name">   اسم الطالب </label>
                 <input type="text" id="name">
             </div>
             <div>
-                <label for="content"> رص الحنك</label>
+                <label for="content"> تفاصيل الطالب</label>
                 <textarea rows="10" cols="50" id="content"></textarea>
             </div>
             <div>
-                    <label for="tel"> رقمك</label>
+                    <label for="tel"> رقم الطالب</label>
                     <textarea rows="1" cols="10" id="tel"></textarea>
             </div>
-            <button id="add" type="button"> دوس هنا</button>
+            <button id="add" type="button"> إضغط هنا</button>
         </form>
 
        </div>
 
        <div id="div-list">
-           <h3>الحنك البيش </h3>
+           <h3>التعديل  </h3>
            <ul id="list">
 
            </ul>
+       </div>
+
+       <div id="edit"  class="hide">
+            <form>
+                <div>
+                        <label for="edit-name" >  تعديل الاسم</label>
+                        <input type="text" id="edit-name">
+
+                </div>
+                
+                <div>
+                        <label for="edit-content"> عدل التفاصيل </label>
+                        <textarea rows="10" cols="50" id="edit-content"></textarea>
+                    </div>
+                    <div>
+                            <label for="edit-tel"> رقم الطالب</label>
+                            <textarea rows="1" cols="10" id="edit-tel"></textarea>
+                    </div>
+
+                <button id="save" type="button">  حفظ  </button>
+                <button id="del" type="button"> حذف </button>
+                <button id="cancel" type="button"> إلغاء</button>
+        
+            </form>
+
+
        </div>
     </body>
 </html>
